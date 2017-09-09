@@ -1,6 +1,6 @@
 {
   "name": "x-ray-electron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "electron driver for x-ray",
   "author": "Mirco Bartels <mirco.bartels@gmail.com>",
   "main": "./dist/app.js",
