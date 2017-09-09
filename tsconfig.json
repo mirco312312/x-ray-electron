@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "diagnostics": false,
+        "pretty": true,
+        "target": "es5",
+        "module": "commonjs",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "declaration": true,
+        "listEmittedFiles": true,
+        "noEmitOnError": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "stripInternal": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./**/*.spec.ts"
+    ]
+}
