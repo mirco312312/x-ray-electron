@@ -30,14 +30,14 @@
     "compile:ts": "tsc",
     "postcompile:ts": "npm-run-all bundle:js bundle:tsd",
     "bundle:js": "rollup --config",
-    "bundle:tsd": "echo $null > dist/app.d.ts && concat-glob-cli -f ./build/*.d.ts -o ./dist/app.d.ts",
-    "buildstart": "node -p \"require('chalk').white('Build started...')\" && echo $null",
-    "postclean": "node -p \"require('chalk').white('Cleared directories: ./dist ./build')\" && echo $null",
-    "precompile:ts": "node -p \"require('chalk').white('Compiling Typescript:')\" && echo $null",
-    "prebundle:js": "echo $null && node -p \"require('chalk').white('Bundling ./dist/*.js files:')\"",
-    "prebundle:tsd": "echo $null && node -p \"require('chalk').white('Bundling ./dist/*.d.ts files:')\" && echo $null",
+    "bundle:tsd": "concat-glob-cli -f ./build/*.d.ts -o ./dist/app.d.ts",
+    "buildstart": "node -p \"require('chalk').white('Build started...')\" && node -p \"''\"",
+    "postclean": "node -p \"require('chalk').white('Cleared directories: ./dist ./build')\" && node -p \"''\"",
+    "precompile:ts": "node -p \"require('chalk').white('Compiling Typescript:')\" && node -p \"''\"",
+    "prebundle:js": "node -p \"''\" && node -p \"require('chalk').white('Bundling ./dist/*.js files:')\"",
+    "prebundle:tsd": "node -p \"''\" && node -p \"require('chalk').white('Bundling ./dist/*.d.ts files:')\" && node -p \"''\"",
     "postbundle:tsd": "node -p \"require('chalk').green('created ./dist/app.d.ts')\"",
-    "buildfinish": "echo $null && node -p \"require('chalk').bold.green('Build completed')\""
+    "buildfinish": "node -p \"''\" && node -p \"require('chalk').bold.green('Build completed')\""
   },
   "keywords": []
 }
